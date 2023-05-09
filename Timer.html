@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Timer.css">
+    <script src="Timer.js" defer></script>
+    <script src="Timer.json"></script>
+
+    <title>StopWatch</title>
+</head>
+<body>
+    <div class="title">StopWatch</div>
+    <div class="stopwatch">
+        <div class="display">00 : 00 : 00 : 00</div>
+        <div class="buttons">
+            <button type="button" class="start">Start</button>
+            <button type="button" class="pause">Pause</button>
+            <button type="button" class="reset">Reset</button>
+        </div>
+    </div>
+
+<!-- ********************* Timer ************************* -->
+
+    <div class="title">Timer</div>
+    <div class="final-date">
+        Deadline:
+        <input type="datetime-local" id="final-date-input">
+        <button id="countdown-button">count down</button>
+      </div>
+    
+      <div id="message">
+        <h2>Time is up!</h2>
+      </div>
+    
+      <div class="clock-container">
+    
+        <div class="cell">
+          <h3>Days</h3>
+          <h1 id="days">-</h1>
+        </div>
+    
+        <div class="cell">
+          <h3>Hours</h3>
+          <h1 id="hours">-</h1>
+        </div>
+    
+        <div class="cell">
+          <h3>Minutes</h3>
+          <h1 id="minutes">-</h1>
+        </div>
+    
+        <div class="cell">
+          <h3>Seconds</h3>
+          <h1 id="seconds">-</h1>
+        </div>
+      </div>
+    
+</body>
+</html>
